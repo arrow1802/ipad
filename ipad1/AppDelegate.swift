@@ -11,10 +11,28 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+//    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+//        let startScreenViewController = LoginViewController()
+//        let startScreenNavController = UINavigationController()
+//        startScreenNavController.pushViewController(startScreenViewController, animated: true)
+//
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = startScreenNavController
+//        window?.makeKeyAndVisible()
+        
+        
+        
+//        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+//        window?.windowScene = windowScene
+//        let vc = LoginViewController()
+//        let navigationVC = UINavigationController(rootViewController: vc)
+//        window?.rootViewController = navigationVC
+//        window?.makeKeyAndVisible()
+
+        
         return true
     }
 
