@@ -15,6 +15,7 @@
 		00416919246D69A20090D771 /* asr.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 00416918246D69A20090D771 /* asr.mp4 */; };
 		0041691D246D72B90090D771 /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041691B246D72B90090D771 /* SAButton.swift */; };
 		0041691E246D72B90090D771 /* SATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041691C246D72B90090D771 /* SATextField.swift */; };
+		004169202473C2850090D771 /* loginViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041691F2473C2850090D771 /* loginViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		00416918246D69A20090D771 /* asr.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = asr.mp4; sourceTree = "<group>"; };
 		0041691B246D72B90090D771 /* SAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
 		0041691C246D72B90090D771 /* SATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATextField.swift; sourceTree = "<group>"; };
+		0041691F2473C2850090D771 /* loginViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				0041690D246D65F40090D771 /* Assets.xcassets */,
 				0041690F246D65F40090D771 /* LaunchScreen.storyboard */,
 				00416912246D65F40090D771 /* Info.plist */,
+				0041691F2473C2850090D771 /* loginViewExt.swift */,
 			);
 			path = ipad1;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				00416909246D65EB0090D771 /* LoginViewController.swift in Sources */,
 				0041691D246D72B90090D771 /* SAButton.swift in Sources */,
+				004169202473C2850090D771 /* loginViewExt.swift in Sources */,
 				00416905246D65EB0090D771 /* AppDelegate.swift in Sources */,
 				0041691E246D72B90090D771 /* SATextField.swift in Sources */,
 				00416907246D65EB0090D771 /* SceneDelegate.swift in Sources */,
@@ -301,7 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.asr.ipad1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -318,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.asr.ipad1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

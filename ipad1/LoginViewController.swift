@@ -13,10 +13,56 @@ class LoginViewController: UIViewController {
 
     var player:AVPlayer?
     
+     // MARK: Text Field
+    
+    let loginContentView:UIView = {
+            let view = UIView()
+    //        view.backgroundColor = .green
+            return view
+        }()
+        
+    let emailTextField: UITextField = {
+        let textField = UITextField()
+        textField.placeholder = "EMAIL"
+        return textField
+    }()
+    
+    let passwordTextField: UITextField = {
+        let textField = UITextField()
+        textField.isSecureTextEntry = true
+        textField.placeholder = "PASSWORD"
+        return textField
+    }()
+    
+    let loginButton: UIButton = {
+        let button = UIButton(type: .custom)
+        button.setTitle("Login", for: .normal)
+        button.addTarget(
+            self,
+            action: #selector(loginButtonPressed),
+            for: UIControl.Event.touchUpInside)
+        return button
+    }()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         playBackGroundVideo()
+        setupLoginContentView()
     }
+    
+   
+    
+    @objc func loginButtonPressed(sender: UIButton!) {
+        print("login button pressed")
+        if emailTextField.text!.isEmpty {
+           print("please fill login id and password")
+        } else {
+            print("login id and password",emailTextField.text!,passwordTextField.text!)
+        }
+    }
+    
     
     // MARK:    Backgroud Video
     
