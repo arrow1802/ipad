@@ -16,6 +16,10 @@
 		0041691D246D72B90090D771 /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041691B246D72B90090D771 /* SAButton.swift */; };
 		0041691E246D72B90090D771 /* SATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041691C246D72B90090D771 /* SATextField.swift */; };
 		004169202473C2850090D771 /* loginViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041691F2473C2850090D771 /* loginViewExt.swift */; };
+		004169232473D3D10090D771 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 004169222473D3D10090D771 /* libsqlite3.tbd */; };
+		004169252473D3F20090D771 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 004169242473D3F20090D771 /* libsqlite3.tbd */; };
+		0041692A247402B30090D771 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00416929247402B30090D771 /* DBHelper.swift */; };
+		0041692C247502880090D771 /* USER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041692B247502880090D771 /* USER.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,11 @@
 		0041691B246D72B90090D771 /* SAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
 		0041691C246D72B90090D771 /* SATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATextField.swift; sourceTree = "<group>"; };
 		0041691F2473C2850090D771 /* loginViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewExt.swift; sourceTree = "<group>"; };
+		004169222473D3D10090D771 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		004169242473D3F20090D771 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		004169262473D4510090D771 /* ipad1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ipad1-Bridging-Header.h"; sourceTree = "<group>"; };
+		00416929247402B30090D771 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		0041692B247502880090D771 /* USER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USER.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004169252473D3F20090D771 /* libsqlite3.tbd in Frameworks */,
+				004169232473D3D10090D771 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +59,7 @@
 			children = (
 				00416903246D65EB0090D771 /* ipad1 */,
 				00416902246D65EB0090D771 /* Products */,
+				004169212473D3D10090D771 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +83,10 @@
 				0041690F246D65F40090D771 /* LaunchScreen.storyboard */,
 				00416912246D65F40090D771 /* Info.plist */,
 				0041691F2473C2850090D771 /* loginViewExt.swift */,
+				004169242473D3F20090D771 /* libsqlite3.tbd */,
+				004169262473D4510090D771 /* ipad1-Bridging-Header.h */,
+				00416929247402B30090D771 /* DBHelper.swift */,
+				0041692B247502880090D771 /* USER.swift */,
 			);
 			path = ipad1;
 			sourceTree = "<group>";
@@ -82,6 +98,14 @@
 				0041691C246D72B90090D771 /* SATextField.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		004169212473D3D10090D771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				004169222473D3D10090D771 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +140,7 @@
 				TargetAttributes = {
 					00416900246D65EB0090D771 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -158,6 +183,8 @@
 				00416909246D65EB0090D771 /* LoginViewController.swift in Sources */,
 				0041691D246D72B90090D771 /* SAButton.swift in Sources */,
 				004169202473C2850090D771 /* loginViewExt.swift in Sources */,
+				0041692A247402B30090D771 /* DBHelper.swift in Sources */,
+				0041692C247502880090D771 /* USER.swift in Sources */,
 				00416905246D65EB0090D771 /* AppDelegate.swift in Sources */,
 				0041691E246D72B90090D771 /* SATextField.swift in Sources */,
 				00416907246D65EB0090D771 /* SceneDelegate.swift in Sources */,
@@ -296,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ipad1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,6 +332,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.asr.ipad1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ipad1/ipad1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -313,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ipad1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.asr.ipad1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ipad1/ipad1-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

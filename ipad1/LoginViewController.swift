@@ -13,6 +13,10 @@ class LoginViewController: UIViewController {
 
     var player:AVPlayer?
     
+    var db : DBHelper = DBHelper()
+    
+    var users:[USER] = []
+    
      // MARK: Text Field
     
     let loginContentView:UIView = {
@@ -50,6 +54,14 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         playBackGroundVideo()
         setupLoginContentView()
+        
+        
+//        db.insertUser(Id: 1, emailId: "user1", password: "123")
+//        
+//        users = db.readUser()
+//        
+//        print(users)
+        
     }
     
    
@@ -79,7 +91,6 @@ class LoginViewController: UIViewController {
             player!.play()
             
             player!.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
-    //        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.playerItemDidReachEnd(_:)), name: NSNotification.Name(rawValue : "AVPlayerItemdidPlayToEndTimeNotification"), object: player!.currentItem)
             
             NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachtoEnd), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player!.currentItem)
             // player!.seek(to: CMTime.zero)

@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 
 extension LoginViewController {
+    
+    
+    
     func setupLoginContentView() {
         view.addSubview(loginContentView)
         
@@ -53,6 +56,8 @@ extension LoginViewController {
     }
     
     func setupPasswordTextField() {
+        
+        
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.isUserInteractionEnabled = true
 //        passwordTextField.backgroundColor = .white
@@ -78,6 +83,7 @@ extension LoginViewController {
     }
     
     func setupLoginButton() {
+        
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.isUserInteractionEnabled = true
 //        loginButton.backgroundColor = .cyan
