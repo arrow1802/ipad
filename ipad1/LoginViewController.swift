@@ -13,9 +13,11 @@ class LoginViewController: UIViewController {
 
     var player:AVPlayer?
     
-    var db : DBHelper = DBHelper()
+    var dbCred : DBHelper = DBHelper()
     
     var users:[USER] = []
+    
+    var Messages:[WAMSG] = []
     
      // MARK: Text Field
     
@@ -52,6 +54,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         playBackGroundVideo()
         setupLoginContentView()
         
@@ -72,6 +75,12 @@ class LoginViewController: UIViewController {
            print("please fill login id and password")
         } else {
             print("login id and password",emailTextField.text!,passwordTextField.text!)
+            let response = dbCred.readOneUser(_emailId: emailTextField.text!, _password: passwordTextField.text!)
+            if response == true {
+//                homeViewController
+                navigationController?.pushViewController(homeViewController(), animated: true)
+            }
+            print("response",response)
         }
     }
     
